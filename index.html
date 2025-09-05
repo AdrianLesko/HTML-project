@@ -15,6 +15,8 @@
                 <li><a href="#o-mne">O mne</a></li>
                 <li><a href="#zrucnosti">Zručnosti</a></li>
                 <li><a href="#projekty">Projekty</a></li>
+                <li><a href="#tabulka">Tabuľka</a></li>
+                <li><a href="#formular">Kontaktný formulár</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
@@ -124,6 +126,48 @@
                 </tbody>
             </table>
         </section>
+
+        <!-- sekcia formulár-->
+         <section id="formular">
+            <h2> Ukážka Formuláru s rôznymi typmi polí</h2>
+
+            <form class="form" action="#" method="post">
+                <fieldset>
+                    <legend>Kontaktný formulár</legend><br>
+
+                    <label for="meno">Meno a priezvisko:</label>
+                    <input type="text" id="meno" name="meno" required><br>
+
+                    <label for="email">Mail:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="heslo">Heslo:</label>
+                    <input type="password" id="heslo" name="heslo"><br>
+
+                    <label for="datum">Dátum stretnutia:</label>
+                    <input type="date" id="datum" name="datum"><br>
+
+                    <p>Pohlavie:</p>
+                    <label for="muz"><input type="radio" id="muz" name="pohlavie" value="muz">Muž</label>
+                    <label for="zena"><input type="radio" id="zena" name="pohlavie" value="zena">Žena</label><br>
+
+                    <input type="checkbox" id="suhlas" name="suhlas" required>
+                    <label for="suhlas">Súhlasím so spracovaním údajov</label><br>
+
+                    <label for="krajina">Krajina:</label>
+                    <select id="krajina" name="krajina">
+                        <option value="Slovensko" selected>Slovensko</option>
+                        <option value="Cesko">Česko</option>
+                        <option value="ine"> Iné</option>
+                    </select><br> 
+
+                    <label for="sprava">Správa:</label><br>
+                    <textarea id="sprava" name="sprava"></textarea><br><br>
+
+                    <button type="submit">Odoslať</button>
+                </fieldset>
+            </form>
+         </section>
         <section id="kontakt"></section>
     </main>
     <footer></footer>
